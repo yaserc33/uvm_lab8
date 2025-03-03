@@ -10,7 +10,6 @@ import yapp_pkg::*;
 //yapp_packet tr;
 
 initial begin
-
 //tr = yapp_packet::type_id::create("tr", null);
 // repeat (5) begin
 //     tr.randomize();
