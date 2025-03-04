@@ -15,6 +15,9 @@ uvc1 = yapp_uvc::type_id::create("uvc1" ,this);
 
 endfunction
 
-
+function void start_of_simulation_phase(uvm_phase phase);
+super.start_of_simulation_phase(phase);
+`uvm_info(get_type_name(), "running start_of_simulation_phase🙏🏻" , UVM_HIGH)
+endfunction
 
 endclass

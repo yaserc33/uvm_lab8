@@ -13,11 +13,12 @@ router_tb tb;
 
 function void build_phase (uvm_phase phase);
 super.build_phase(phase);
-uvm_config_wrapper::set(this, "base_test",  "default_sequence", yapp_5_packets::get_type()); 
+uvm_config_wrapper::set(this, "tb.uvc1.agt.seqr.run_phase",  "default_sequence", yapp_5_packets::get_type()); 
 tb = router_tb::type_id::create("tb" , this);
 `uvm_info("base_test", "build_phase completed" , UVM_HIGH )
 
 endfunction
+
 
 
 

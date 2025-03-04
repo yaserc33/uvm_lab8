@@ -17,7 +17,10 @@ function void build_phase (uvm_phase phase);
 
 endfunction
 
-
+function void start_of_simulation_phase(uvm_phase phase);
+super.start_of_simulation_phase(phase);
+`uvm_info(get_type_name(), "running start_of_simulation_phase🙏🏻" , UVM_HIGH)
+endfunction
 
 task run_phase (uvm_phase phase);
     super.run_phase(phase);
